@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .f{
+            background-color: rgb(228, 199, 228);
+        padding: 20px;
+        margin: 30px;
+        border: 2px dashed ;
+        border-color: black;
+
+        }
+        
+h1{
+    text-align: center;
+    color: mediumseagreen;
+    font-style: italic;
+}
+form{
+    
+    margin:3rem;
+    text-align: center;
+    padding: 20px;
+    
+}
+b{
+    padding: 10px;
+    margin-bottom: 10px;
+    color: rgb(158, 33, 33);
+}
+.btn button{
+    padding: 5px;
+    background-color: grey;
+    color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-right: 15px;
+
+}
+.btn{
+    padding: 20px;
+        margin-top: 40px;
+}
+    </style>
+</head>
+<body>
+    <div class="f">
+    <h1>Publish House "X"</h1>
+    <form>
+        <b>Customer's Name:</b>
+        <input type="text"></input><br><br>
+        <b>Address:</b>
+        <textarea name="add" id="add" cols="30" rows="3"></textarea><br><br>
+        <b>Mobile Number:</b>
+        <input type="tel" id="phone" name="phone" placeholder="Enter the mob no." pattern="[0-9]{10}" required><br><br>
+        <b>Book Title:</b>
+        <input type="text"><br><br>
+        <b>Author's Name:</b>
+        <input type="text"><br><br>
+        <b>Edition No:</b>
+        <input type="number"><br><br>
+        <b>Payment:</b>
+        <input type="radio" name="Payment" id="payment" value="Cash on Delivery" required="Cash on Delivery">Cash on Delivery 
+        <!-- <input type="radio" name="Payment" id="payment" value="Cash on Delivery" >Debit Card <br> -->
+        <div class="btn">
+            <button>Submit</button>
+            <button>Clear</button>     
+        </div>
+    </form>
+</div>
+</body>
+</html>
