@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #a{
+            height: 100px;
+            width: 100px;
+            margin: auto;
+        }
+        #a button{
+padding: 20px;
+border: 1px solid black;
+border-radius: 20px;
+position: relative;
+top: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="a">
+        <!-- <b>Blank-Page</b> -->
+        <button onclick="return call();">Click to open new window</button>
+    </div>
+    <div id="b">
+        <!-- <b>Location bar</b> -->
+    </div>
+    <script>
+        // const change=()=>{
+        //     const c = document.querySelector("#a")
+        //     c.style.height= "400px";
+        //     c.style.width= "400px";
+        //     c.style.backgroundColor= "black";
+        //     if(c.style.backgroundColor==white)
+        // {
+        //     c.style.backgroundColor= "black";
+        // }
+        // else
+        // {
+        //     c.style.backgroundColor= "white";
+        // }
+        // }
+        const call=()=> {
+//             const c= document.querySelector("#a")
+// c.window.open("","","400px","400px")
+
+let c=window.open(location,'_new',"width=400,height=400");
+        // }
+        // const stop=()=> {
+            // if(c.window.open()==true)
+        //   c.window()  
+         c.close();
+         return false;
+        }
+    </script>
+</body>
+</html>

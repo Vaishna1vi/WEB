@@ -5,17 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            margin: 20px;
+            /* text-align: center; */
+        }
+        body{
+            background-color: black;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    <div>Hello World</div>
-    <div>Scripting with javascript</div>
+    <div id="q">Click to see the message...</div><br>
+    <!-- <button onclick="change()">Submit</button> -->
+    <button onclick="darkTheme()">Click to enable Light Theme</button>
+
+    <!-- <div>Scripting with javascript</div> -->
   
     <script>
        // console.log("hi")
 
         //variables
         
-
         // var i1 = 10;
         // var i = "hi";
         // console.log(i)
@@ -43,25 +55,25 @@
 
     // console.log(`My name is ${name} and my Reg-no is ${rn} and my degree is ${degree}`)
 
-function Name(name) {
-console.log("My name is "+name) 
-}
-Name("Vaishnavi")
+// function Name(name) {
+// console.log("My name is "+name) 
+// }
+// Name("Vaishnavi")
 
-function Sum(n1, n2) {
-    sum=n1+n2;
-    return sum;
-}
-console.log(Sum(23.55, 45))
+// function Sum(n1, n2) {
+//     sum=n1+n2;
+//     return sum;
+// }
+// console.log(Sum(23.55, 45))
 
-const a=function LisenceCheck(age) {
-if(age>=20)
-console.log("You are eligible to drive.");
-else
-console.log("You are under age.")
-}
+// const a=function LisenceCheck(age) {
+// if(age>=20)
+// console.log("You are eligible to drive.");
+// else
+// console.log("You are under age.")
+// }
 // LisenceCheck(18)
-a(12)
+// a(12)
 
 // const Check=(age)=> {
 //     if(age>=18)
@@ -70,6 +82,46 @@ a(12)
 //     console.log("wait for a while...")
 // }
 // Check(18)
+
+// let ab=prompt();
+// console.log(ab);
+
+// document.getElementById('q').innerText=ab
+// let a=alert("Logged out");
+
+const change=()=>{
+    // document.querySelector("#q").innerHTML="Vaishnavi"
+    const g=document.querySelector("#q")
+    g.innerHTML="Vaishnavi"
+    g.style.backgroundColor= "blue"
+    g.style.color ="white"
+    g.style.width ="5rem"
+}
+const darkTheme=()=> {
+    const w=document.querySelector("body");
+    const t = document.querySelector("button");
+    const v = document.querySelector("#q")
+    // w.style.backgroundColor="white"
+    // w.style.color="white"
+    if(w.style.backgroundColor!="white"){
+w.style.backgroundColor="white"
+        w.style.color="white"
+         t.innerHTML= "Click to enable Dark Theme"
+         v.innerHTML = "Dim the Lights"
+         v.style.width = "8rem"
+         v.style.backgroundColor = "black"
+        //  v.style.textAlign = "center"
+    }
+    else {
+w.style.backgroundColor = "black"
+        w.style.color ="black"
+        t.innerHTML = "Click to enable Light Theme"
+        v.innerHTML = "Glow the Candles"
+        v.style.width = "8rem"
+         v.style.backgroundColor = "white"
+        //  v.style.textAlign = "center"
+    }
+}
 
     </script>
     <!-- <script src="script.js"></script> -->
