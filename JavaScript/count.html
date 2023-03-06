@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 500px;
+            width: 500px;
+            margin: auto;
+            margin-top: 100px;
+            padding: 5px;
+            text-align: center;
+            background-color: rgb(8, 177, 120);
+        }
+        h1{
+            text-align: center;
+            color: brown;
+            margin-bottom: 50px;
+        }
+        p{
+            margin-top: 20px;
+            margin-left: 5px;
+            padding: 5px;
+        }
+        button{
+            margin-top: 10px;
+            margin-left: 10px;
+            padding: 20px;
+            color: blue;
+            border: 0.5px solid blue;
+            background-color: burlywood;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+        <h1>Count the paragraph</h1>
+        <p>My Basic Introduction.</p>
+        <p>My name is Vaishnavi Nagvanshi.</p>
+        <p>My registration number is 22MCA10189.</p>
+        <p>That's all Thankyou...</p>
+        <button onclick="getcount()">Click to Count</button>
+    </div>
+    <script>
+        const getcount = () => {
+            var c = document.getElementsByTagName("p");
+            // console.log("Total paragraphs are: "+c.length);
+            alert("Total paragraphs are: "+c.length);
+        }
+    </script>
+</body>
+</html>

@@ -47,10 +47,10 @@ b{
 }
     </style>
 </head>
-<body>
+<body id="j">
     <div class="f">
     <h1>Publish House "X"</h1>
-    <form>
+    <form id="k">
         <b>Customer's Name:</b>
         <input type="text"></input><br><br>
         <b>Address:</b>
@@ -68,10 +68,25 @@ b{
         <input type="radio" name="Payment" id="payment" value="Cash on Delivery" required="Cash on Delivery" checked="checked">Cash on Delivery
         <!-- <input type="radio" name="Payment" id="payment" value="debit card" >Debit Card <br> -->
         <div class="btn">
-            <button>Submit</button>
-            <button>Clear</button>     
+            <button onclick="return form
+            ()">Submit</button>
         </div>
+        <button>Clear</button>     
     </form>
 </div>
+<script>
+    const fill = () => {
+        const c = document.querySelector("#j")
+      
+        if(q.open()==true) {
+            c.innerHTML = "Thank you !!"
+        }
+    }
+    const form = () =>{
+        const q=document.querySelector(".btn");
+        q.innerHTML = "Submitted"
+
+    }
+</script>
 </body>
 </html>
