@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #a{
+            border: 0.5px solid brown;
+            background-color: bisque;
+            border-radius: 30px;
+            padding: 5px;
+            margin: 20px;
+        }
+        #b{
+            border: 0.5px solid rgb(34, 2, 2);
+            background-color: rgb(173, 101, 12);
+            border-radius: 30px;
+            padding: 5px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form name="f">
+        <b>Enter Name: </b>
+        <input type="text" name="name">
+        <br>
+        <button id="a" onclick="getPrint()" value="print name">
+            Print Name
+        </button>
+        <br>
+        <b>Enter Number: </b>
+        <input type="text" id="num" name="num">
+        <br>
+        <button id="b" onclick="printCube()" value="print num">
+        Click to cube
+        </button>
+        <br>
+        <!-- <button id="c" onclick="show()" value="comment">Comment</button> -->
+        <input type="button" value="comment" onclick="show()">
+        <div id="mylocation"></div>
+
+    </form>
+    <script>
+         function getPrint(){
+            var c=document.f.name.value;
+            alert(c);
+        }
+        function printCube() {
+            var a=document.getElementById("num").value;
+            alert(a*a*a);
+        }
+        function show() {
+            var data = "Name:<br><input type='text'name='name'><br>Comment<br><textarea rows='5' cols='30'></textarea><br><input type='submit' value='comment'>";
+            document.getElementById("mylocation").innerHTML= data;
+        }
+    </script>
+</body>
+</html>
