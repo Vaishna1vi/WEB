@@ -41,6 +41,9 @@
         <!-- <button id="c" onclick="show()" value="comment">Comment</button> -->
         <input type="button" value="comment" onclick="show()">
         <div id="mylocation"></div>
+        <b>Give input to see factorial of it.</b>
+        <input type="number" id="o" name="number">
+        <button id="d" onclick="facto()">Factorial</button>
 
     </form>
     <script>
@@ -55,6 +58,16 @@
         function show() {
             var data = "Name:<br><input type='text'name='name'><br>Comment<br><textarea rows='5' cols='30'></textarea><br><input type='submit' value='comment'>";
             document.getElementById("mylocation").innerHTML= data;
+        }
+        function facto() {
+            var i=document.o.number.value;
+            for(i=0;i<=value;i++)
+            count = 0;
+            {
+               const value=value*count;
+                count++;
+            }
+            alert(value);
         }
     </script>
 </body>
