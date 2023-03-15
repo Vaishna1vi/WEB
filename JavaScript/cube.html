@@ -25,7 +25,7 @@
 <body>
     <form name="f">
         <b>Enter Name: </b>
-        <input type="text" name="name">
+        <input type="text" id="name" name="name">
         <br>
         <button id="a" onclick="getPrint()" value="print name">
             Print Name
@@ -43,16 +43,18 @@
         <div id="mylocation"></div>
         <b>Give input to see factorial of it.</b>
         <input type="number" id="o" name="number">
-        <button id="d" onclick="facto()">Factorial</button>
+        <button id="d" onclick="return facto()" value="print o">Factorial</button>
 
     </form>
     <script>
          function getPrint(){
-            var c=document.f.name.value;
+            // var c=document.f.name.value;
+            var c=document.getElementById("name").value;
             alert(c);
         }
         function printCube() {
-            var a=document.getElementById("num").value;
+            // var a=document.getElementById("num").value;
+            var a=document.f.num.value;
             alert(a*a*a);
         }
         function show() {
@@ -60,9 +62,9 @@
             document.getElementById("mylocation").innerHTML= data;
         }
         function facto() {
-            var i=document.o.number.value;
+            var i=document.getElementById("o").value;
             for(i=0;i<=value;i++)
-            count = 0;
+           var count = 1;
             {
                const value=value*count;
                 count++;
@@ -72,3 +74,7 @@
     </script>
 </body>
 </html>
+
+<!-- let fact = 1;
+for (i = 1; i <= number; i++) {
+    fact *= i; -->

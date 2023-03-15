@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#b1").click(function(){
+                // $("p").hide();
+                // $(".test").hide();
+                $("#test").hide();
+            });
+        });
+
+        $(document).ready(function(){
+            $("#b2").click(function(){
+                // $("p").hide();
+                // $(".test").hide();
+                $("#test").show();
+            });
+        });
+    </script>
+</head>
+<body>
+    <h2>This is Heading.</h2>
+    <!-- <div class="test"> -->
+    <div id="test">
+    <p>This is paragraph.</p>
+    <p>This is another paragraph.</p>
+</div>
+    <button id="b1">Click to hide paragraph</button>
+    <button id="b2">Click to see paragraph</button>
+
+</body>
+</html>
