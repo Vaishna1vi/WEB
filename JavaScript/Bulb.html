@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            text-align: center;
+        }
+        p{
+            font-style: italic;
+            font-weight: 500;
+        }
+        #myimg{
+            height: 200px;
+            /* position: relative;
+            left: 30%; */
+            margin-left: 30%;
+        }
+       div{
+        margin: 50px;
+        justify-items: center;
+       }
+       button{
+        padding: 10px;
+        border-radius: 20px;
+        border: solid 0.5px;
+        background-color: bisque;
+        margin: 0px 30px 0px 40px;
+       }
+    </style>
+</head>
+<body>
+    <h2>Turn on and off the Bulb</h2>
+    <p>In this example we can turn on and off the bulb with help of Javascript.</p>
+    <!-- <img id="myimg" src="https://i.pinimg.com/564x/3f/cb/04/3fcb04b9204ae407de4ee0f85bd90dc6.jpg" alt=""></img> -->
+    <img id="myimg" src="https://res.cloudinary.com/klipfolio/image/upload/v1500283193/pic_bulboff_to4zaq.png" alt=""></img>
+
+    <div>
+    <button onclick="on()">Turn on the bulb</button>
+    <button onclick="off()">Turn off the bulb</button>
+</div>
+    <script>
+        const on = () => {
+            document.getElementById("myimg").src="https://res.cloudinary.com/klipfolio/image/upload/v1500283189/pic_bulbon_tvpcg5.png";
+        }
+        const off = () => {
+            document.getElementById("myimg").src="https://res.cloudinary.com/klipfolio/image/upload/v1500283193/pic_bulboff_to4zaq.png";
+        }
+    </script>
+</body>
+</html>
