@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            text-align: center;
+        }
+        button{
+            background-color: beige;
+            border: solid 0.5px black;
+            border-radius: 30px;
+            padding: 5px 15px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Want to see Time!</h2>
+        <p>Click on the button below to see the current date and time of your country.</p>
+        <button onclick="time()">Click me</button>
+        <p id="btn"></p>
+    </div>
+    <script>
+        function time() {
+document.getElementById("btn").innerHTML=Date()
+        }
+    </script>
+</body>
+</html>
