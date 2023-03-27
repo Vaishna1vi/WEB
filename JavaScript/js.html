@@ -5,12 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        div{
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
+    <div>
     <p id="q">
-
+Want to see changes?
     </p>
-    <button>Click</button>
+    <p>
+        Just click the button given below.
+    </p>
+    <button onclick="tap()">Click</button>
+</div>
     <script>
         function tap() {
             document.getElementById("q").innerHTML = document.write("Hello, How are you?");
