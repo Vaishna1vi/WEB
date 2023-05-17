@@ -13,9 +13,13 @@
         <button onclick="show()">Click</button>
         <script>
             const show = () => {
-                if(new Date().getHours()> 22) {
+                document.getElementById("dp").innerHTML= new Date().getHours();
 
+                if(new Date().getHours()> 22) {
                     document.getElementById("dp").innerHTML="Good Night";
+                }
+                else {
+                    document.getElementById("dp").innerHTML="Have a nice day!";
                 }
             }
         </script>
