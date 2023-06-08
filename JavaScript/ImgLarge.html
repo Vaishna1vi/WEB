@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 20rem;
+            width: 20rem;
+            margin: 5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Expand the Image</h1>
+        <img id="image"  src="https://img.freepik.com/free-photo/colorful-fruits-tasty-fresh-ripe-juicy-white-desk_179666-169.jpg" alt="">
+        <button onclick="click()">Click</button>
+    </div>
+    <script>
+        const click = () => {
+
+            const img = document.getElementById("image");
+            // image.addEventListener("click", function(){
+
+                const currentImg = parseInt(image.style.width);
+                const newSize = currentImg*1.1;
+                
+                image.style.width = newSize + "px";
+                image.style.height = newSize + "px";
+            // });
+            
+        }
+    </script>
+</body>
+</html>
