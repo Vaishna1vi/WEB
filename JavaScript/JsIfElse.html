@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <div class="contain">
         <p>This example shows JS if-else condition with date and time</p>
@@ -13,16 +15,20 @@
         <button onclick="show()">Click</button>
         <script>
             const show = () => {
-                document.getElementById("dp").innerHTML= new Date().getHours();
+                document.getElementById("dp").innerHTML = new Date().getHours();
 
-                if(new Date().getHours()> 22) {
-                    document.getElementById("dp").innerHTML="Good Night";
+                if (new Date().getHours() > 22) {
+                    document.getElementById("dp").innerHTML = "Good Night";
+                }
+                else if (new Date.getHours() < 12) {
+                    document.getElementById("dp").innerHTML = "Good Morning";
                 }
                 else {
-                    document.getElementById("dp").innerHTML="Have a nice day!";
+                    document.getElementById("dp").innerHTML = "Have a nice day!";
                 }
             }
         </script>
     </div>
 </body>
+
 </html>
