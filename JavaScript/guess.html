@@ -6,16 +6,24 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container" style="display: flex; justify-content: center; align-items: center; background-color: aqua; color: black;">
+    <div class="container" style="display: flex; justify-content: center; align-items: center; background-color: aqua; color: black; height: 100px; width: 500px;">
 <p id="q">
     Guess the number!
 </p>
-<button onclick="guess()">Click</button>
+<button onclick="guess()" style="margin: 2rem;">Click</button>
+<div class="contain"> </div>
+<div class="ans"> </div>
     </div>
     <script>
         const guess = () => {
-            const a = Math.random()
-            const b = document.getElementsById("q").innerHTML = a;
+            const a = Math.random();
+            const b = document.querySelector(".contain").innerHTML = "Number is: " + a;
+            if(a<0.5) {
+const c = document.querySelector(".ans").innerHTML = "Number is less than 0.5."
+            }
+            else {
+                document.querySelector(".ans").innerHTML = "Number is greater than 0.5."
+            }
         }
     </script>
 </body>

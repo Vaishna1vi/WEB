@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>This is the page consist of all examples and methods used for array in JavaScript</h2>
+    <button onclick="newArr">Click to see array</button>
+    <p id="s"></p>
+    <script>
+    //    arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    //    const show = (element) => {
+    //     console.log(element);
+    //    }
+    //   let newArr = arr.forEach(show);
+
+    //    a = [25, 67, 22, 89, 90, 56, 98, 101, 400, 201, 77, 91, 40];
+    //  const b = a.filter((val) => {
+    //    return val >= 90;
+    //   });
+
+    // let sum = b.reduce((prev, curr)=> {
+    //     return prev + curr;
+    // });
+
+    // console.log("sum of b: ",sum);
+
+    let inp = prompt("Enter the input: ");
+    console.log(inp);
+    let arr =[];
+    for(let i=1; i<=inp; i++) {
+        arr.push(i);
+    }
+    console.log(arr);
+
+    let factorial = arr.reduce((prev, curr)=> {
+         return prev*curr;
+    });
+
+    console.log(factorial);
+
+    </script>
+</body>
+</html>
