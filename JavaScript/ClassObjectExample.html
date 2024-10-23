@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classes-and-Object-JS-Example</title>
+  </head>
+  <body>
+    <script>
+      const student = {
+        name: "Tanu",
+        Age: 21,
+        Education: function () {
+          console.log("MCA Student.", "Age is: ", this.Age); // this keyword is used to refer the key attribute of the same object for the function which is present in the object.
+        },
+      };
+
+      const data = {
+        Education() {
+          console.log("data object");
+        },
+      };
+      //prototype is a special type of a reference object which is created by default. It can be null also.
+      // here student object act as prototype for the data object.
+      data.__proto__ = student; // with help of __proto__ method we can add the function and features of other object in the present object. If prototype method and object method are same then the priority will be given to object method.
+    </script>
+  </body>
+</html>
